@@ -56,3 +56,11 @@ Considere os seguintes esquemas de relação:
     Resultado ← (σ(ProfessorDisciplina.disc_codigo= Matricula.disc_codigo))(ProfessorDisciplina X Π(Aluno.alu_numero,nome_aluno,Matricula.disc_codigo)(σ(Aluno.alu_num= Matricula.alu_num))(AlunoXMatricula))
 
     Π(alu_nome)(σ(prof_nome="Marcos Santos"))(σ(ProfessorDisciplina.professor_numero=Professor.professor_numero))(ProfessorXResultado)
+
+<h3>Operação Adicionais</h3>
+<b>Os nomes de todos os alunos que tiraram nota maior que o aluno “Ana Silva” na disciplina FIS202.</b>
+
+    ρ(nota-ana)(Π(nota)σ(alu-nome="Ana Silva" ∧ disc-codigo="FIS202" )(Aluno |x| Matricula))
+    ρ(alunos)(σ(alu-nome !="Ana Silva" ∧disc-codigo="FIS202" )(Aluno |x| Matricula))
+    Π(nome)σ(alunos.nota>nota-ana.nota)(nota-ana X alunos)
+
