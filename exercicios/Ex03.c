@@ -1,13 +1,14 @@
 // Ex03: Cadastro de Produtos usando Struct
-/*  Crie uma estrutura de dados chamada "Produto" que armazena nome, preço e quantidade em estoque.
-    Permita ao usuário cadastrar produtos, exibir as informações e calcular o valor total em estoque (preço * quantidade).
+/* 
+Crie uma estrutura de dados chamada "Produto" que armazena nome, preço e quantidade em estoque.
+Permita ao usuário cadastrar produtos, exibir as informações e calcular o valor total em estoque (preço * quantidade).
 */
 
 #include <stdio.h>
 
 typedef struct
 {
-    char nome[15];
+    char nome[255];
     float preco;
     int qtt_estoque;
 } Produto;

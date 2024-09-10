@@ -8,7 +8,7 @@ Cada registro deve conter nome, idade e salário. Permita ao usuário adicionar 
 #include <string.h>
 
 typedef struct {
-    char nome[50];
+    char nome[255];
     int idade;
     float salario;
 } Registro;
@@ -25,7 +25,7 @@ void escreve_novo_registro() {
 
     printf("Digite um novo registro (nome, idade, salario): ");
     fgets(novo.nome, sizeof(novo.nome), stdin);
-    novo.nome[strcspn(novo.nome, "\n")] = '\0'; // Remove newline character
+    novo.nome[strcspn(novo.nome, "\n")] = '\0'; // Remove \n
     scanf("%d %f", &novo.idade, &novo.salario);
     getchar(); // Limpa o buffer do stdin
 
@@ -108,7 +108,7 @@ int main() {
             case 3:
                 printf("Digite o nome a ser buscado: ");
                 fgets(nome_busca, sizeof(nome_busca), stdin);
-                nome_busca[strcspn(nome_busca, "\n")] = '\0'; // Remove newline character
+                nome_busca[strcspn(nome_busca, "\n")] = '\0'; // Remove \n
                 busca_nome(nome_busca);
                 break;
             case 4:
