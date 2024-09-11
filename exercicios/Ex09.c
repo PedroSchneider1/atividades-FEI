@@ -24,7 +24,7 @@ float media(int* array, int n){
         sum += array[i];
     }
     
-	media = sum/n;
+	media = (float)sum/n;
 	
 	return media;
 }
