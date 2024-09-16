@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
 
 	tempo_req = clock() - tempo_req;
 
-	// Calculate the execution time in seconds
+	// Calcula o tempo de execução em segundos
 	tempo_exec = (float)(tempo_req) / CLOCKS_PER_SEC;
 
 	printf("Tempo de execucao: %.6f segundos\n", tempo_exec);
