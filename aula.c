@@ -1,46 +1,60 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int soma(int a, int b) { return a + b; }
+int subtrai(int a, int b) { return a - b; }
+
+void imprime_valor(void *ptr, char tipo) {
+    if (tipo == 'i')
+        printf("Valor int: %d\n", *((int *)ptr));
+    else if (tipo == 'f')
+        printf("Valor float: %.2f\n", *((float *)ptr));
+}
+
+// Função de comparação para inteiros
+int compara_inteiros(const void *a, const void *b) { return (*(int *)a - *(int *)b); }
+
 int main()
 {
+    // Ponteiro de funções
 
-    // This pointer will hold the
-    // base address of the block created
-    int *ptr, *ptr1;
-    int n, i;
+    /*
+    int (*ptr_func)(int, int) = soma;
+    int resultado = ptr_func(2,3);
+    printf("Resultado: %i", resultado);
+    */
 
-    // Get the number of elements for the array
-    n = 5;
-    printf("Enter number of elements: %d\n", n);
+    /*
+    int (*operacoes[])(int, int) = {soma, subtrai};
 
-    // Dynamically allocate memory using malloc()
-    ptr = (int*)malloc(n * sizeof(int));
+    printf("Resultado soma: %i\n", operacoes[0](5,2));
+    printf("Resultado subtrai: %i\n", operacoes[1](5,2));
+    */
 
-    // Dynamically allocate memory using calloc()
-    ptr1 = (int*)calloc(n, sizeof(int));
+    // =============================
 
-    // Check if the memory has been successfully
-    // allocated by malloc or not
-    if (ptr == NULL || ptr1 == NULL) {
-        printf("Memory not allocated.\n");
-        exit(0);
+    // Ponteiros de void
+    
+    /*
+    void *ptr;
+    int x = 10;
+    ptr = &x;
+    int *int_ptr = (int *)ptr;
+
+    printf("Valor de x: %i\n", *int_ptr);
+
+    imprime_valor(ptr, 'i');
+    */
+
+    int arr[] = {5, 2, 9, 1, 5, 6};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    // Ordenando o array usando qsort
+    qsort(arr, n, sizeof(int), compara_inteiros);
+    // Exibindo o array ordenado
+    for (int i = 0; i < n; i++) {
+    printf("%d ", arr[i]);
     }
-    else {
-
-        // Memory has been successfully allocated
-        printf("Memory successfully allocated using malloc.\n");
-
-        // Free the memory
-        free(ptr);
-        printf("Malloc Memory successfully freed.\n");
-
-        // Memory has been successfully allocated
-        printf("\nMemory successfully allocated using calloc.\n");
-
-        // Free the memory
-        free(ptr1);
-        printf("Calloc Memory successfully freed.\n");
-    }
-
+    printf("\n");
     return 0;
 }
