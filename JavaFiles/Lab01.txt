@@ -1,0 +1,120 @@
+Questão 01
+package laboratorio1;
+
+public class Laboratorio1 {
+    public static void main(String[] args) {
+        for(int i = 0; i <= 100; i+=2){
+            System.out.printf("%d ", i);
+        }
+        System.out.println("\n");
+    }
+}
+===================================================
+
+Questão 02
+package laboratorio1;
+
+public class Laboratorio1 {
+    public static void main(String[] args) {
+        for(int i = 0; i <= 100; i++){
+            if(i <= 50){
+                System.out.printf("%d ", i);
+            }
+            else{
+                i++;
+                System.out.printf("%d ", i);
+            }
+        }
+    }
+}
+===================================================
+
+Questão 03
+package laboratorio1;
+
+import java.util.Scanner;
+
+public class Laboratorio1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Digite um valor natural n: ");
+        int n = sc.nextInt();
+        float s = 0f;
+        
+        for(int i = 1; i <= n; i++){
+            s += (1/(float)i);
+        }
+        
+        System.out.printf("Soma: %.4f", s);
+    }
+}
+===================================================
+
+Questão 04
+package laboratorio1;
+
+import java.util.Scanner;
+
+public class Laboratorio1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float nota, acum_nota = 0;
+        int cont_nota = 0, aprovados = 0;
+        
+        for(int i = 0; i < 80; i++){
+            System.out.println("Digite a nota: ");
+            nota = sc.nextFloat();
+            acum_nota += nota;
+            cont_nota++;
+            
+            if(nota >= 6)
+                aprovados++;
+        }
+        
+        System.out.printf("Média: %.3f | Aprovados: %d", acum_nota/cont_nota, aprovados);
+    }
+}
+===================================================
+
+Questão 05
+package laboratorio1;
+
+import java.util.Scanner;
+
+public class Laboratorio1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int idade, cont_pessoas = 0, cont_mulheres = 0;
+        char sexo;
+        float salario, soma_idade = 0, soma_salarios = 0;
+        
+        while (true) {
+            System.out.println("Digite a idade: ");
+            idade = sc.nextInt();
+            if (idade < 0) break;
+            soma_idade += idade;
+            cont_pessoas++;
+            
+            sc.nextLine(); // Consumir a nova linha
+            
+            System.out.println("Digite o sexo (M/F): ");
+            sexo = sc.nextLine().charAt(0);
+            
+            System.out.println("Digite o salário: ");
+            salario = sc.nextFloat();
+            soma_salarios += salario;
+            
+            if (salario < 600 && (sexo == 'F' || sexo == 'f'))
+                cont_mulheres++;
+        }
+        
+        if (cont_pessoas > 0) {
+            System.out.printf("Média de idade: %.2f | Média de salários: %.2f | Quantidade de mulheres com salário abaixo de R$600: %d\n",
+                    soma_idade / cont_pessoas, soma_salarios / cont_pessoas, cont_mulheres);
+        } else {
+            System.out.println("Nenhuma entrada válida foi registrada.");
+        }
+    }
+}
