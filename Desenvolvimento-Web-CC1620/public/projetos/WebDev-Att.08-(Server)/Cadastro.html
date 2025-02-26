@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="img">
+            <img height="150" width="150" src="loginIcon.jpg" alt="loginIcon">
+        </div>
+        <div class="fields">
+            <h1>Cadastro</h1>
+            <form action="/cadastra" method="POST">
+                <label>Novo usuário: </label>
+                <input type="text" name="user"></p>
+                <label>Nova senha: </label>
+                <input type="password" name="password"></p>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+
+        <div class="fields">
+            <h2>Exemplo de cadastro no DB</h2>
+            <form action="/cadastrar_usuario" method="post">
+                <label>Novo nome: </label>
+                <input type="text" name="nome"></p>
+                <label>Novo login: </label>
+                <input type="text" name="login"></p>
+                <label>Nova senha: </label>
+                <input type="password" name="password"></p>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+
+        <div class="redirect">
+            <a href="Login.html">Já possui cadastro? Faça login!</a>
+        </div>
+    </div>
+</body>
+</html>

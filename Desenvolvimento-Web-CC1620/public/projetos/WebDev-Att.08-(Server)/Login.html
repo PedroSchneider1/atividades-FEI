@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="page">
+        <div id="link">
+            <a href="../../Project.html">Página de projetos</a>
+        </div>
+
+        <div class="img">
+                <img height="150" width="150" src="loginIcon.jpg" alt="loginIcon">
+        </div>
+        <div class="fields">
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                <label>Usuário: </label>
+                <input type="text" name="user"></p>
+                <label>Senha: </label>
+                <input type="password" name="password"></p>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+        <div class="fields">
+            <h1>Login pelo DB</h1>
+            <form action="/logar_usuario" method="POST">
+                <label>Login: </label>
+                <input type="text" name="login"></p>
+                <label>Senha: </label>
+                <input type="password" name="password"></p>
+                <input type="submit" value="Login">
+            </form>
+
+            <h1>Update pelo DB</h1>
+            <form action="/atualizar_usuario" method="POST">
+                <label>Login: </label>
+                <input type="text" name="login_update"></p>
+                <label>Senha atual: </label>
+                <input type="password" name="current_password"></p>
+                <label>Nova senha: </label>
+                <input type="password" name="new_password"></p>
+                <input type="submit" value="Update">
+            </form>
+
+            <h1>Remove pelo DB</h1>
+            <form action="/remover_usuario" method="POST">
+                <label>Login: </label>
+                <input type="text" name="login_remove"></p>
+                <label>Senha: </label>
+                <input type="password" name="password_remove"></p>
+                <input type="submit" value="Remove">
+            </form>
+        </div>
+
+        <div class="redirect">
+            <a href="Cadastro.html">Não possui cadastro? Registre-se agora!</a>
+        </div>
+    </div>
+</body>
+</html>

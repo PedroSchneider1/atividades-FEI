@@ -1,0 +1,101 @@
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fields{
+    text-align: center;
+}
+
+.fields > form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fields_cars{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+}
+
+.register_car > form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.update_car > form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.remove_car > form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redirect{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.redirect a{
+    text-decoration: underline solid;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.redirect a:hover{
+    opacity: 0.5;
+}
+
+#button_management{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: start;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 250px 25px 250px;
+}
+
+.carros{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.erro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

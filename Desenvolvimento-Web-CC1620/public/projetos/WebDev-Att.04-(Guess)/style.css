@@ -1,0 +1,63 @@
+body{
+    background-color: lightgray;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+}
+
+#resposta{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px 33% 5px 33%;
+    border: dotted black 1px;
+}
+
+.tentativas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+#menores{
+    width: 50%;
+    padding: 10px;
+    background-color: bisque;
+    border: solid black 1px;
+}
+
+#maiores{
+    width: 50%;
+    padding: 10px;
+    background-color: beige;
+    border: solid black 1px;
+}
+
+#segredo{
+    display: flex;
+    justify-content: center;
+    text-indent: 0.5ch;
+    width: 50%;
+    padding: 10px;
+    background-color: gray;
+    border: solid black 1px;
+}
+
+#link{
+    text-align: center;
+    padding: 10px 0 25px 0;
+}
+
+#link a{
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+#link:hover{
+    opacity: 0.5;
+}

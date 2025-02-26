@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleShop.css">
+    <title>Lista de carros</title>
+</head>
+<body>
+    <div class="welcome">
+        <h1><%= resposta %></h1>
+        <div>Bem-vindo, <b><%= user_info[0].db_full_name%>!</b></div>
+    </div>
+
+    <div class="resp">
+        <% if (carros && carros.length > 0) { %>
+            <% for (let i = 0; i < carros.length; i++) { %>
+                <div class="carros">
+                    <h1><%= i+1 %>° carro</h1>
+                    <% if(carros[i].db_qtt <= 0) { %>
+                        <p><b>Marca:</b> <%= carros[i].db_brand %></p>
+                        <p><b>Modelo:</b> <%= carros[i].db_model %></p>
+                        <p><b>Ano:</b> <%= carros[i].db_year %></p>
+                        <h3>Carro esgotado!</h3>
+                    <% } %>
+
+                    <% if(carros[i].db_qtt > 0) { %>
+                        <form action="/venda_carro" method="get">
+                            <p><b>Marca:</b> <%= carros[i].db_brand %></p>
+                            <p><b>Modelo:</b> <%= carros[i].db_model %></p>
+                            <p><b>Ano:</b> <%= carros[i].db_year %></p>
+                            <p><b>Quantidade:</b> <%= carros[i].db_qtt %></p>
+                            
+                            <input type="hidden" name="car_brand" value="<%= carros[i].db_brand %>">
+                            <input type="hidden" name="car_model" value="<%= carros[i].db_model %>">
+                            <input type="hidden" name="car_year" value="<%= carros[i].db_year %>">
+                            <button>Comprar carro</button>
+                        </form>
+                    <% } %>
+                    
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+
+    <div class="redirect">
+        <a href="/page_login_shop">Encerrar sessão</a>
+        <% if(admin == 1) { %>
+            <a href="/gerenciar_carros">Gerenciar lista de carros</a>
+        <% } %>
+    </div>
+</body>
+</html>

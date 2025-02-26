@@ -1,0 +1,36 @@
+body{
+    background-color: lightgray;
+}
+
+#fields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+}
+
+#posts{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    border: solid black 2px;
+    margin: 15px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+#posts h1, h3{
+    padding-bottom: 10px;
+    margin: 0px 0px 0px 0px; /* Top, right, bottom, left */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleShop.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="page">
+        <div class="welcome">
+            <h1>Seja bem-vindo ao Super Cars Shop!</h1>
+            <h4>Por favor, entre com sua conta para ver a listagem atualizada de nossos carros!</h4>
+        </div>
+
+        <div class="img">
+                <img height="150" width="150" src="loginIcon.jpg" alt="loginIcon">
+        </div>
+        <div class="fields">
+            <h1>Login</h1>
+            <form action="/login_shop" method="POST">
+                <label>Usuário: </label>
+                <input type="text" name="user_shop"></p>
+                <label>Senha: </label>
+                <input type="password" name="pass_shop"></p>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+        <div class="redirect">
+            <a href="cadastroShop.html">Não possui cadastro? Registre-se agora!</a>
+            <a href="../../Project.html">Página de projetos</a>
+        </div>
+    </div>
+</body>
+</html>

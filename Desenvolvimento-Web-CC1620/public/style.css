@@ -1,0 +1,126 @@
+body{
+    background-color: lightgray;
+}
+
+#clave{
+    position: absolute;
+    width: 100px;
+    top: 15px;
+    left: 0;
+}
+
+#tableLinks{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#tableLinks table{
+    border: dotted black 2px;
+}
+
+#tableLinks tr td{
+    padding: 3px;
+    border: solid black 2px;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30pt;
+    text-align: center;
+}
+
+#nav{
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#nav a{
+    padding: 5px;
+    border: solid black;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+#nav a:hover{
+    text-decoration: none;
+    color: darkred;
+}
+
+.infos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.texto{
+    width: 80%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+.texto a{
+    text-decoration: none;
+}
+
+.partitura{
+    border: solid grey 1px;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    text-align: center;
+    width: 680px;
+    height: auto;
+}
+
+.partitura i{
+    border: solid grey 2px;
+    background-color: white;
+    display: block;
+}
+
+.partitura p{
+    display: none;
+}
+
+.partitura:hover p{
+    display: block;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#serioso{
+    width: 680px;
+    height: 475px;
+}
+
+.fotos{
+    width: 600px;
+    border: solid grey 1px;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    text-align: center;
+}
+
+.fotos p{
+    margin-top: 1px;
+    border: solid grey 2px;
+    background-color: white;
+    display: block;
+}
+
+.fotos b{
+    display: block;
+    background-color: bisque;
+}
+
+.fotos a{
+    text-decoration: none;
+}
+
+#frederico{
+    width: 600px;
+    height: 412px;
+}
