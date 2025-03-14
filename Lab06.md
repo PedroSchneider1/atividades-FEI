@@ -68,3 +68,7 @@ COMP:
 FIM:
 	SJMP $		;para em um laço infinito
 ```
+
+# Exercícios Aula Lab
+
+
