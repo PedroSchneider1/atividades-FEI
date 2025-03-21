@@ -58,7 +58,7 @@ COMP:
 	MOV A, R7	;coloca o primeiro número no Acc (A = R7)
 	CLR C		;zera o carry
 	SUBB A, R6	;A - R6, se C = 0 -> A >= R6 (não troca)
-				;		 se C = 1 -> A <  R6 (troca)
+			;	 se C = 1 -> A <  R6 (troca)
 	
 	JNC FIM		;se C = 0, finaliza
 	XCH A, R7	;
