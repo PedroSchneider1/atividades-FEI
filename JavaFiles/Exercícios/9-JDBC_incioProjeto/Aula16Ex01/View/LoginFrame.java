@@ -4,6 +4,11 @@
  */
 package View;
 
+import Controller.ControllerLogin;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author unifpschneider
@@ -15,7 +20,58 @@ public class LoginFrame extends javax.swing.JFrame {
      */
     public LoginFrame() {
         initComponents();
+        c = new ControllerLogin(this);
     }
+
+    public JButton getBt_cadastro() {
+        return bt_cadastro;
+    }
+
+    public void setBt_cadastro(JButton bt_cadastro) {
+        this.bt_cadastro = bt_cadastro;
+    }
+
+    public JButton getBt_login() {
+        return bt_login;
+    }
+
+    public void setBt_login(JButton bt_login) {
+        this.bt_login = bt_login;
+    }
+
+    public JLabel getLbl_senha_login() {
+        return lbl_senha_login;
+    }
+
+    public void setLbl_senha_login(JLabel lbl_senha_login) {
+        this.lbl_senha_login = lbl_senha_login;
+    }
+
+    public JLabel getLbl_usuario_login() {
+        return lbl_usuario_login;
+    }
+
+    public void setLbl_usuario_login(JLabel lbl_usuario_login) {
+        this.lbl_usuario_login = lbl_usuario_login;
+    }
+
+    public JTextField getTxt_senha_login() {
+        return txt_senha_login;
+    }
+
+    public void setTxt_senha_login(JTextField txt_senha_login) {
+        this.txt_senha_login = txt_senha_login;
+    }
+
+    public JTextField getTxt_usuario_login() {
+        return txt_usuario_login;
+    }
+
+    public void setTxt_usuario_login(JTextField txt_usuario_login) {
+        this.txt_usuario_login = txt_usuario_login;
+    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -122,8 +178,7 @@ public class LoginFrame extends javax.swing.JFrame {
 
     private void bt_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_loginActionPerformed
         // TODO add your handling code here:
-        AltExcFrame aef = new AltExcFrame();
-        aef.setVisible(rootPaneCheckingEnabled);
+        c.loginAluno();
     }//GEN-LAST:event_bt_loginActionPerformed
 
     /**
@@ -161,6 +216,7 @@ public class LoginFrame extends javax.swing.JFrame {
 //        });
 //    }
 
+    private ControllerLogin c;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bt_cadastro;
     private javax.swing.JButton bt_login;

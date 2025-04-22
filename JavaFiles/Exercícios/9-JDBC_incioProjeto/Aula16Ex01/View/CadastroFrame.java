@@ -51,6 +51,11 @@ public class CadastroFrame extends javax.swing.JFrame {
 
         bt_cadastro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         bt_cadastro.setText("Cadastro");
+        bt_cadastro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_cadastroActionPerformed(evt);
+            }
+        });
 
         lbl_usuario_cadastro1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbl_usuario_cadastro1.setText("Nome:");
@@ -113,6 +118,10 @@ public class CadastroFrame extends javax.swing.JFrame {
     private void txt_nome_cadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nome_cadastroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_nome_cadastroActionPerformed
+
+    private void bt_cadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_cadastroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_cadastroActionPerformed
 
     /**
      * @param args the command line arguments
