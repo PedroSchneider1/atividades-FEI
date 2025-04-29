@@ -4,6 +4,12 @@
  */
 package View;
 
+import Controller.ControllerUsuario;
+import Model.Aluno;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author unifpschneider
@@ -13,10 +19,61 @@ public class AltExcFrame extends javax.swing.JFrame {
     /**
      * Creates new form AltExcFrame
      */
-    public AltExcFrame() {
+    public AltExcFrame(Aluno aluno) {
         initComponents();
+        lbl_nome_altexc.setText(aluno.getNome());
+        lbl_usuario_altexc.setText(aluno.getUsuario());
+        c = new ControllerUsuario(this, aluno);
     }
 
+    public JButton getBt_alterar() {
+        return bt_alterar;
+    }
+
+    public void setBt_alterar(JButton bt_alterar) {
+        this.bt_alterar = bt_alterar;
+    }
+
+    public JButton getBt_excluir() {
+        return bt_excluir;
+    }
+
+    public void setBt_excluir(JButton bt_excluir) {
+        this.bt_excluir = bt_excluir;
+    }
+
+    public JLabel getLbl_nome_altexc() {
+        return lbl_nome_altexc;
+    }
+
+    public void setLbl_nome_altexc(JLabel lbl_nome_altexc) {
+        this.lbl_nome_altexc = lbl_nome_altexc;
+    }
+
+    public JLabel getLbl_senha_altexc() {
+        return lbl_senha_altexc;
+    }
+
+    public void setLbl_senha_altexc(JLabel lbl_senha_altexc) {
+        this.lbl_senha_altexc = lbl_senha_altexc;
+    }
+
+    public JLabel getLbl_usuario_altexc() {
+        return lbl_usuario_altexc;
+    }
+
+    public void setLbl_usuario_altexc(JLabel lbl_usuario_altexc) {
+        this.lbl_usuario_altexc = lbl_usuario_altexc;
+    }
+
+    public JTextField getTxt_senha_altexc() {
+        return txt_senha_altexc;
+    }
+
+    public void setTxt_senha_altexc(JTextField txt_senha_altexc) {
+        this.txt_senha_altexc = txt_senha_altexc;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -150,10 +207,12 @@ public class AltExcFrame extends javax.swing.JFrame {
 
     private void bt_alterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_alterarActionPerformed
         // TODO add your handling code here:
+        c.atualizar();
     }//GEN-LAST:event_bt_alterarActionPerformed
 
     private void bt_excluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_excluirActionPerformed
         // TODO add your handling code here:
+        c.remover();
     }//GEN-LAST:event_bt_excluirActionPerformed
 
     /**
@@ -191,6 +250,7 @@ public class AltExcFrame extends javax.swing.JFrame {
 //        });
 //    }
 
+    private ControllerUsuario c;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bt_alterar;
     private javax.swing.JButton bt_excluir;

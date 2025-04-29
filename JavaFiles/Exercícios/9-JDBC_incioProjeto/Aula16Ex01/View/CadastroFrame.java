@@ -4,6 +4,11 @@
  */
 package View;
 
+import Controller.ControllerCadastro;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author unifpschneider
@@ -15,8 +20,65 @@ public class CadastroFrame extends javax.swing.JFrame {
      */
     public CadastroFrame() {
         initComponents();
+        c = new ControllerCadastro(this);
     }
 
+    public JButton getBt_cadastro() {
+        return bt_cadastro;
+    }
+
+    public void setBt_cadastro(JButton bt_cadastro) {
+        this.bt_cadastro = bt_cadastro;
+    }
+
+    public JLabel getLbl_nome_cadastro() {
+        return lbl_nome_cadastro;
+    }
+
+    public void setLbl_nome_cadastro(JLabel lbl_nome_cadastro) {
+        this.lbl_nome_cadastro = lbl_nome_cadastro;
+    }
+
+    public JLabel getLbl_senha_cadastro() {
+        return lbl_senha_cadastro;
+    }
+
+    public void setLbl_senha_cadastro(JLabel lbl_senha_cadastro) {
+        this.lbl_senha_cadastro = lbl_senha_cadastro;
+    }
+
+    public JLabel getLbl_usuario_cadastro() {
+        return lbl_usuario_cadastro;
+    }
+
+    public void setLbl_usuario_cadastro(JLabel lbl_usuario_cadastro) {
+        this.lbl_usuario_cadastro = lbl_usuario_cadastro;
+    }
+
+    public JTextField getTxt_nome_cadastro() {
+        return txt_nome_cadastro;
+    }
+
+    public void setTxt_nome_cadastro(JTextField txt_nome_cadastro) {
+        this.txt_nome_cadastro = txt_nome_cadastro;
+    }
+
+    public JTextField getTxt_senha_cadastro() {
+        return txt_senha_cadastro;
+    }
+
+    public void setTxt_senha_cadastro(JTextField txt_senha_cadastro) {
+        this.txt_senha_cadastro = txt_senha_cadastro;
+    }
+
+    public JTextField getTxt_usuario_cadastro() {
+        return txt_usuario_cadastro;
+    }
+
+    public void setTxt_usuario_cadastro(JTextField txt_usuario_cadastro) {
+        this.txt_usuario_cadastro = txt_usuario_cadastro;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,7 +93,7 @@ public class CadastroFrame extends javax.swing.JFrame {
         txt_senha_cadastro = new javax.swing.JTextField();
         txt_usuario_cadastro = new javax.swing.JTextField();
         bt_cadastro = new javax.swing.JButton();
-        lbl_usuario_cadastro1 = new javax.swing.JLabel();
+        lbl_nome_cadastro = new javax.swing.JLabel();
         txt_nome_cadastro = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -57,8 +119,8 @@ public class CadastroFrame extends javax.swing.JFrame {
             }
         });
 
-        lbl_usuario_cadastro1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbl_usuario_cadastro1.setText("Nome:");
+        lbl_nome_cadastro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbl_nome_cadastro.setText("Nome:");
 
         txt_nome_cadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,7 +145,7 @@ public class CadastroFrame extends javax.swing.JFrame {
                             .addComponent(txt_senha_cadastro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(bt_cadastro)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lbl_usuario_cadastro1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbl_nome_cadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txt_nome_cadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -93,7 +155,7 @@ public class CadastroFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_usuario_cadastro1)
+                    .addComponent(lbl_nome_cadastro)
                     .addComponent(txt_nome_cadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -121,6 +183,7 @@ public class CadastroFrame extends javax.swing.JFrame {
 
     private void bt_cadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_cadastroActionPerformed
         // TODO add your handling code here:
+        c.salvarAluno();
     }//GEN-LAST:event_bt_cadastroActionPerformed
 
     /**
@@ -157,12 +220,13 @@ public class CadastroFrame extends javax.swing.JFrame {
 //            }
 //        });
 //    }
-
+    
+    private ControllerCadastro c;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bt_cadastro;
+    private javax.swing.JLabel lbl_nome_cadastro;
     private javax.swing.JLabel lbl_senha_cadastro;
     private javax.swing.JLabel lbl_usuario_cadastro;
-    private javax.swing.JLabel lbl_usuario_cadastro1;
     private javax.swing.JTextField txt_nome_cadastro;
     private javax.swing.JTextField txt_senha_cadastro;
     private javax.swing.JTextField txt_usuario_cadastro;

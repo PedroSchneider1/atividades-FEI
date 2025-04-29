@@ -40,7 +40,7 @@
                   </Group>
                   <Component id="bt_cadastro" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="lbl_usuario_cadastro1" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="lbl_nome_cadastro" min="-2" pref="55" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="txt_nome_cadastro" min="-2" pref="270" max="-2" attributes="0"/>
                   </Group>
@@ -54,7 +54,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbl_usuario_cadastro1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbl_nome_cadastro" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txt_nome_cadastro" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -109,7 +109,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_cadastroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbl_usuario_cadastro1">
+    <Component class="javax.swing.JLabel" name="lbl_nome_cadastro">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="1"/>

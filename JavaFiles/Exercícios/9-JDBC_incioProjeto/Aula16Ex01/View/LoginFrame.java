@@ -174,6 +174,7 @@ public class LoginFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         CadastroFrame cf = new CadastroFrame();
         cf.setVisible(rootPaneCheckingEnabled);
+        this.setVisible(false);
     }//GEN-LAST:event_bt_cadastroActionPerformed
 
     private void bt_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_loginActionPerformed

@@ -7,6 +7,7 @@ package Controller;
 import DAO.AlunoDAO;
 import DAO.Conexao;
 import Model.Aluno;
+import View.AltExcFrame;
 import View.LoginFrame;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -38,6 +39,12 @@ public class ControllerLogin {
                                               "Login efetuado com sucesso!",
                                               "Aviso!",
                                               JOptionPane.INFORMATION_MESSAGE);
+                String nome = res.getString("nome");
+                String usuario = res.getString("usuario");
+                Aluno alunoLogado = new Aluno(nome, usuario, null);
+                AltExcFrame aec = new AltExcFrame(alunoLogado);
+                aec.setVisible(true);
+                view.setVisible(false);
             }
             else{
                 JOptionPane.showMessageDialog(view,
@@ -51,6 +58,5 @@ public class ControllerLogin {
                                               "ERRO!",
                                               JOptionPane.ERROR_MESSAGE);
         }
-        
     }
 }
