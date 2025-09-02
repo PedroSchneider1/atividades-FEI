@@ -1,0 +1,68 @@
+public class Funcionario {
+
+    private String nome;
+    private String sobrenome;
+    private double salarioMensal;
+
+    // Métodos set e get
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSalarioMensal(double salarioMensal) {
+        if (salarioMensal < 0) 
+            this.salarioMensal = 0;
+        this.salarioMensal = salarioMensal;
+    }
+
+    public double getSalarioMensal() {
+        return salarioMensal;
+    }
+
+    // Método para calcular o salário anual
+    public double calcularSalarioAnual() {
+        return salarioMensal * 12;
+    }
+
+    // Método para aumentar o salário em 10%
+    public void aumentarSalario() {
+        salarioMensal *= 1.10;
+    }
+
+    public static void main(String[] args) {
+        Funcionario funcionario1 = new Funcionario();
+        funcionario1.setNome("João");
+        funcionario1.setSobrenome("Silva");
+        funcionario1.setSalarioMensal(2500);
+
+        Funcionario funcionario2 = new Funcionario();
+        funcionario2.setNome("Maria");
+        funcionario2.setSobrenome("Oliveira");
+        funcionario2.setSalarioMensal(3000);
+
+        // Exibindo os salários anuais antes do aumento
+        System.out.println("Salário anual de " + funcionario1.getNome() + " " + funcionario1.getSobrenome() + ": R$ " + funcionario1.calcularSalarioAnual());
+        System.out.println("Salário anual de " + funcionario2.getNome() + " " + funcionario2.getSobrenome() + ": R$ " + funcionario2.calcularSalarioAnual());
+
+        // Aplicando aumento de 10% nos salários
+        funcionario1.aumentarSalario();
+        funcionario2.aumentarSalario();
+
+        // Exibindo os salários anuais após o aumento
+        System.out.println("\nApós aumento de 10%:");
+        System.out.println("Salário anual de " + funcionario1.getNome() + " " + funcionario1.getSobrenome() + ": R$ " + funcionario1.calcularSalarioAnual());
+        System.out.println("Salário anual de " + funcionario2.getNome() + " " + funcionario2.getSobrenome() + ": R$ " + funcionario2.calcularSalarioAnual());
+    }
+}
