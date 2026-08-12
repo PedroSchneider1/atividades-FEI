@@ -1,0 +1,12 @@
+services:
+
+  servidor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cc7261:rest
+    container_name: servidor
+    volumes:
+      - ./app:/app
+    ports:
+      - 8000:8000
