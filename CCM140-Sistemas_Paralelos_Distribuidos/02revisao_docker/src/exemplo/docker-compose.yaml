@@ -1,0 +1,19 @@
+services:
+  container1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cc7261:teste
+    volumes:
+      - ./c1.py:/arquivos/main.py
+    deploy:
+      replicas: 2
+  container2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cc7261:teste
+    volumes:
+      - ./c2.py:/arquivos/main.py
+    deploy:
+      replicas: 2
