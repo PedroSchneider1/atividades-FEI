@@ -1,0 +1,18 @@
+services:
+  servidor:
+    build:
+      context: .
+      dockerfile: Dockerfile_servidor
+    container_name: servidor_rpc
+    ports:
+      - 50051:50051
+
+  cliente:
+    build:
+      context: .
+      dockerfile: Dockerfile_cliente
+    container_name: cliente_rpc
+    ports:
+      - 8000:8000
+    depends_on:
+      - servidor

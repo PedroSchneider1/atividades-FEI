@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package taskmanager;
+
+service TaskManager {
+  rpc Create (CreateRequest) returns (Task);
+  rpc Get (GetRequest) returns (Task);
+  rpc List (ListRequest) returns (ListResponse);
+  rpc Update (UpdateRequest) returns (Task);
+  rpc Delete (DeleteRequest) returns (Empty);
+  rpc ConnectionTest (ConnRequest) returns (ConnReply);
+}
+
+message ConnRequest {
+    string message = 1;
+}
+
+message ConnReply {
+    string message = 1;
+}
+
+message Task {
+  string id = 1;
+  string title = 2;
+  string description = 3;
+  string status = 4;
+}
+
+message CreateRequest {
+  string title = 1;
+  string description = 2;
+}
+
+message GetRequest {
+  string id = 1;
+}
+
+message ListRequest {
+}
+
+message ListResponse {
+  repeated Task tasks = 1;
+}
+
+message UpdateRequest {
+  string id = 1;
+  string title = 2;
+  string description = 3;
+  string status = 4;
+}
+
+message DeleteRequest {
+  string id = 1;
+}
+
+message Empty{}

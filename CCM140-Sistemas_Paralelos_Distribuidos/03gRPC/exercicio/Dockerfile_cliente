@@ -1,0 +1,13 @@
+FROM python:3.13.7-alpine3.21
+
+WORKDIR /app
+
+RUN pip install grpcio grpcio-tools fastapi[standard]
+
+COPY ./taskmanager.proto .
+
+RUN python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. taskmanager.proto
+
+COPY ./cliente.py .
+
+CMD ["fastapi", "run", "cliente.py"]
