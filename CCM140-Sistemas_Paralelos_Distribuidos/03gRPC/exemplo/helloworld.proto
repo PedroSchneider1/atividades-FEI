@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Greeter {
+    rpc HelloWorld(MsgCliente) returns (MsgServidor) {}
+}
+
+message MsgCliente {
+    string mensagem = 1;
+}
+
+message MsgServidor {
+    string mensagem = 1;
+}
