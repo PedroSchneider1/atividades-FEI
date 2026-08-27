@@ -1,0 +1,25 @@
+services:
+
+  servidor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cc7261:rpc
+    container_name: servidor
+    volumes:
+      - ./servidor.py:/app/main.py
+    ports:
+      - 50051:50051
+
+  cliente:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cc7261:rpc
+    container_name: cliente
+    volumes:
+      - ./cliente.py:/app/main.py
+    ports:
+      - 8000:8000
+    depends_on:
+      - servidor
