@@ -1,0 +1,24 @@
+services:
+  servidor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ccm140:pyzmq
+    volumes:
+      - ./servidor.py:/app/main.py
+    ports:
+      - 5555:5555
+    deploy:
+      replicas: 1
+
+  cliente:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ccm140:pyzmq
+    volumes:
+      - ./cliente.py:/app/main.py
+    depends_on:
+      - servidor
+    deploy:
+      replicas: 1
