@@ -1,0 +1,46 @@
+progenitor(jose, joao)
+progenitor(jose, ana)
+progenitor(maria, joao)
+progenitor(maria, ana)
+
+progenitor(ana, helena)
+progenitor(ana, joana)
+
+progenitor(joao, paulo)
+
+progenitor(paulo, carlos)
+progenitor(helena, carlos)
+
+pai(jose, joao)
+pai(jose, ana)
+pai(joao, paulo)
+pai(paulo, carlos)
+
+mae(maria, joao)
+mae(maria, ana)
+mae(ana, helena)
+mae(ana, joana)
+mae(helena, carlos)
+
+irmao(joao, ana)
+
+irma(ana, joao)
+irma(helena, joana)
+irma(joana, helena)
+
+primos(X, Y) :- 
+ 	progenitor(P, X),
+ 	progenitor(T, Y),
+ 	(irmao(P, T); irma(P, T)).
+
+sobrinhos(X, Y) :-
+ 	(irmao(X, P) ; irma(X, P)),
+ 	progenitor(P, Y).
+
+ascendente(X, Y) :-
+ 	progenitor(X, Y).
+ascendente(X, Y) :- 
+ 	progenitor(X, P).
+
+tem_irmao(X) :-
+ 	(irmao(X,_) ; irmao(_,X) ; irma(X,_) ; irma(_, X)).
