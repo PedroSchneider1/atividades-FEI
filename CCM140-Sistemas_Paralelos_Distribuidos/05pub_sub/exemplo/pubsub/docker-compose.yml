@@ -1,0 +1,22 @@
+services:
+  publisher_ex1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq # image on docker hub
+    volumes:
+      - ./publisher.py:/app/main.py
+    ports:
+      - 5555:5555
+    deploy:
+      replicas: 1
+
+  subscriber_ex1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./subscriber.py:/app/main.py
+    deploy:
+      replicas: 1

@@ -48,3 +48,6 @@ print(remover_tarefa(id=1).decode())
 
 # lista tarefas [1]
 print(listar_tarefas())
+
+socket.close()
+context.close()

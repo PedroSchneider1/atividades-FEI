@@ -34,3 +34,6 @@ while True:
         else:
             client_socket.send(message)
 
+server_socket.close()
+client_socket.close()
+context.close()

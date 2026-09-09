@@ -28,3 +28,6 @@ while True:
         print(f"Mensagem desconhecida: {message}", flush=True)
         socket.send_string("ERRO: Comando desconhecido")
 
+socket.close()
+context.close()
+

@@ -1,0 +1,73 @@
+services:
+
+  proxy_lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    container_name: proxy_lab
+    volumes:
+      - ./proxy.py:/app/main.py
+    ports:
+      - 5555:5555
+      - 5556:5556
+
+  pub1_lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./publisher.py:/app/main.py
+    environment:
+      - TYPE=hora
+    depends_on:
+      - proxy_lab
+    
+  pub2_lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./publisher.py:/app/main.py
+    environment:
+      - TYPE=numero
+    depends_on:
+      - proxy_lab
+
+  sub-hora_lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./subscriber.py:/app/main.py
+    environment:
+      - TOPIC=hora
+    depends_on:
+      - proxy_lab
+
+  sub-numero_lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./subscriber.py:/app/main.py
+    environment:
+      - TOPIC=numero
+    depends_on:
+      - proxy_lab
+
+  sub-geral_lab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./subscriber.py:/app/main.py
+    environment:
+      - TOPIC=geral
+    depends_on:
+      - proxy_lab

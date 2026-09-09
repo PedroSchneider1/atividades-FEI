@@ -1,0 +1,37 @@
+services:
+
+  proxy_ex2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    container_name: proxy_ex2
+    volumes:
+      - ./proxy.py:/app/main.py
+    ports:
+      - 5555:5555
+      - 5556:5556
+
+  publisher_ex2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./publisher.py:/app/main.py
+    depends_on:
+      - proxy_ex2
+    deploy:
+      replicas: 1
+
+  subscriber_ex2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cc7261:pyzmq
+    volumes:
+      - ./subscriber.py:/app/main.py
+    depends_on:
+      - proxy_ex2
+    deploy:
+      replicas: 1
