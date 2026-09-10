@@ -1,14 +1,18 @@
 import zmq
 import os
-from time import sleep
 
 context = zmq.Context()
 sub = context.socket(zmq.SUB)
 
 topic = os.getenv("TOPIC")
 
-sub.connect(f"tcp://proxy:5556")
-sub.setsockopt_string(zmq.SUBSCRIBE, topic)
+sub.connect("tcp://proxy_lab:5556")
+
+if topic == "geral":
+    sub.setsockopt_string(zmq.SUBSCRIBE, "hora")
+    sub.setsockopt_string(zmq.SUBSCRIBE, "numero")
+else:
+    sub.setsockopt_string(zmq.SUBSCRIBE, topic)
 
 while True:
     mensagem = sub.recv_string()

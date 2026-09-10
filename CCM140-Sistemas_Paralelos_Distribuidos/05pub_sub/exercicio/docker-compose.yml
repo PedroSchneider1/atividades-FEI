@@ -19,8 +19,6 @@ services:
     image: anjoletto/ccm140:pyzmq
     volumes:
       - ./publisher.py:/app/main.py
-    environment:
-      - TYPE=hora
     depends_on:
       - proxy_lab
     
@@ -31,8 +29,6 @@ services:
     image: anjoletto/ccm140:pyzmq
     volumes:
       - ./publisher.py:/app/main.py
-    environment:
-      - TYPE=numero
     depends_on:
       - proxy_lab
 
