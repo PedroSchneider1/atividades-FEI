@@ -1,0 +1,37 @@
+services:
+  ventilator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./ventilator.py:/app/main.py
+    ports:
+      - 5555:5555
+    deploy:
+      replicas: 1
+
+  sink:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./sink.py:/app/main.py
+    ports:
+      - 5556:5556
+    deploy:
+      replicas: 1
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: anjoletto/ccm140:pyzmq
+    volumes:
+      - ./worker.py:/app/main.py
+    depends_on:
+      - ventilator
+      - sink
+    deploy:
+      replicas: 10
