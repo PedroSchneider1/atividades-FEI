@@ -1,0 +1,3 @@
+0 voltas: impossível, senha < 8 caracteres.
+1 a 7 voltas: impossível, senha < 8 caracteres.
+8+n voltas: possíveis, sem limite superior.

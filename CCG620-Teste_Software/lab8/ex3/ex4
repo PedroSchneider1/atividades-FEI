@@ -1,0 +1,18 @@
+**a) Definições e usos (linha, tipo)**
+
+- `total`: def 2, c-use 5, def 5, p-use 6, def 7, c-use 8
+- `desconto`: def 4, c-use 5
+
+Pares du de `total`: (2,5) c, (2,6) p, (2,8) c, (5,6) p, (5,8) c, (7,8) c. Pares du de `desconto`: (4,5) c. Total: 7.
+
+**b) Pares não percorridos pela suíte atual**
+
+Assumindo a suíte `preco_final(100, False)` e `preco_final(60, True)`, faltam (2,5), (4,5), (5,6), (5,8) e (7,8).
+
+**c) O que falta para All-Uses e por que a suíte não viu o defeito**
+
+Faltam casos com VIP sem piso: `(200, True) → 160`, além de `(30, False) → 50`. O defeito é o desconto aplicado duas vezes na linha 5. A suíte não viu porque `(60, True)` cai no piso de 50, mascarando o erro.
+
+**d) Correção e execução**
+
+Trocar a linha 5 por `total = total - desconto`. Após a correção, a suíte completa passa (5 testes).
