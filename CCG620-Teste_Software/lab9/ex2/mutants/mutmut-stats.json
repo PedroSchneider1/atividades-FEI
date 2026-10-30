@@ -1,0 +1,39 @@
+{
+    "tests_by_mangled_function_name": {
+        "carrinho.x_total_com_desconto": [
+            "tests/test_carrinho.py::test_total_exato",
+            "tests/test_carrinho.py::test_lista_vazia_total_zero",
+            "tests/test_carrinho.py::test_tres_itens_nao_tem_desconto",
+            "tests/test_carrinho.py::test_preco_com_centavos_exige_arredondamento_a_2_casas"
+        ]
+    },
+    "duration_by_test": {
+        "tests/test_carrinho.py::test_total_exato": 8.529999968232005e-05,
+        "tests/test_carrinho.py::test_preco_com_centavos_exige_arredondamento_a_2_casas": 5.8117999742535176e-05,
+        "tests/test_carrinho.py::test_tres_itens_nao_tem_desconto": 4.578299967761268e-05,
+        "tests/test_carrinho.py::test_lista_vazia_total_zero": 5.018900037612184e-05
+    },
+    "stats_time": 0.11226208700000001,
+    "function_hashes": {
+        "carrinho.x_total_com_desconto": "5c3dd1b15198"
+    },
+    "function_dependencies": {},
+    "config_fingerprint": {
+        "test_execution": "2e38e77b22c3",
+        "test_selection": "2e38e77b22c3",
+        "timeout": "d3052321fdc3",
+        "type_check": "2e38e77b22c3"
+    },
+    "watched_file_hashes": {
+        "pyproject.toml": "92d60eac8638",
+        "mutants/pyproject.toml": "92d60eac8638",
+        "mutants/src/carrinho.py.meta": "fb3991704bc6",
+        "mutants/src/carrinho.py.spans": "4128e214fd1b",
+        "mutants/src/carrinho.py:Zone.Identifier": "b952d24cf701",
+        "mutants/tests/test_carrinho.py:Zone.Identifier": "b952d24cf701",
+        "pyproject.toml:Zone.Identifier": "b952d24cf701",
+        "src/carrinho.py:Zone.Identifier": "b952d24cf701",
+        "tests/test_carrinho.py:Zone.Identifier": "b952d24cf701"
+    },
+    "git_commit": "9f50bac75c7adc0e84054cb0057548ccea0d291f"
+}

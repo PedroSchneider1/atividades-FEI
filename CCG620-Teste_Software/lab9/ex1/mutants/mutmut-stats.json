@@ -1,0 +1,70 @@
+{
+    "tests_by_mangled_function_name": {
+        "classificacao.x_classificar_aluno": [
+            "tests/test_classificacao.py::test_presenca_zero_e_valida",
+            "tests/test_classificacao.py::test_media_5_e_recuperacao",
+            "tests/test_classificacao.py::test_aprovado",
+            "tests/test_classificacao.py::test_presenca_fora_do_intervalo_levanta_erro[150]",
+            "tests/test_classificacao.py::test_media_abaixo_de_7_e_recuperacao",
+            "tests/test_classificacao.py::test_presenca_75_nao_reprova_por_falta",
+            "tests/test_classificacao.py::test_media_zero_e_valida",
+            "tests/test_classificacao.py::test_media_7_e_aprovado",
+            "tests/test_classificacao.py::test_media_fora_do_intervalo_levanta_erro[11]",
+            "tests/test_classificacao.py::test_media_fora_do_intervalo_levanta_erro[10.1]",
+            "tests/test_classificacao.py::test_reprovado",
+            "tests/test_classificacao.py::test_media_abaixo_de_5_e_reprovado",
+            "tests/test_classificacao.py::test_media_fora_do_intervalo_levanta_erro[-1]",
+            "tests/test_classificacao.py::test_presenca_fora_do_intervalo_levanta_erro[-1]",
+            "tests/test_classificacao.py::test_presenca_74_reprova_por_falta",
+            "tests/test_classificacao.py::test_media_dez_e_valida",
+            "tests/test_classificacao.py::test_presenca_cem_e_valida",
+            "tests/test_classificacao.py::test_media_fora_do_intervalo_levanta_erro[-0.1]",
+            "tests/test_classificacao.py::test_presenca_fora_do_intervalo_levanta_erro[101]"
+        ]
+    },
+    "duration_by_test": {
+        "tests/test_classificacao.py::test_aprovado": 7.901000026322436e-05,
+        "tests/test_classificacao.py::test_reprovado": 5.496699986906606e-05,
+        "tests/test_classificacao.py::test_media_fora_do_intervalo_levanta_erro[-0.1]": 7.531799974458409e-05,
+        "tests/test_classificacao.py::test_media_fora_do_intervalo_levanta_erro[-1]": 6.266399986998294e-05,
+        "tests/test_classificacao.py::test_media_fora_do_intervalo_levanta_erro[10.1]": 5.764799971075263e-05,
+        "tests/test_classificacao.py::test_media_fora_do_intervalo_levanta_erro[11]": 6.503300028271042e-05,
+        "tests/test_classificacao.py::test_media_zero_e_valida": 5.4647000069962814e-05,
+        "tests/test_classificacao.py::test_media_dez_e_valida": 4.673199964599917e-05,
+        "tests/test_classificacao.py::test_presenca_fora_do_intervalo_levanta_erro[-1]": 5.728599990106886e-05,
+        "tests/test_classificacao.py::test_presenca_fora_do_intervalo_levanta_erro[101]": 5.6537000091338996e-05,
+        "tests/test_classificacao.py::test_presenca_fora_do_intervalo_levanta_erro[150]": 5.733499983762158e-05,
+        "tests/test_classificacao.py::test_presenca_zero_e_valida": 4.3460999677336076e-05,
+        "tests/test_classificacao.py::test_presenca_cem_e_valida": 4.405800018503214e-05,
+        "tests/test_classificacao.py::test_presenca_74_reprova_por_falta": 4.068199996254407e-05,
+        "tests/test_classificacao.py::test_presenca_75_nao_reprova_por_falta": 4.096400016351254e-05,
+        "tests/test_classificacao.py::test_media_7_e_aprovado": 3.982999987783842e-05,
+        "tests/test_classificacao.py::test_media_abaixo_de_7_e_recuperacao": 4.07090001317556e-05,
+        "tests/test_classificacao.py::test_media_5_e_recuperacao": 4.32659999205498e-05,
+        "tests/test_classificacao.py::test_media_abaixo_de_5_e_reprovado": 4.3811000068672e-05
+    },
+    "stats_time": 0.125681639,
+    "function_hashes": {
+        "classificacao.x_classificar_aluno": "109d8edd176a"
+    },
+    "function_dependencies": {},
+    "config_fingerprint": {
+        "test_execution": "2e38e77b22c3",
+        "test_selection": "2e38e77b22c3",
+        "timeout": "d3052321fdc3",
+        "type_check": "2e38e77b22c3"
+    },
+    "watched_file_hashes": {
+        "pyproject.toml": "92d60eac8638",
+        "mutants/pyproject.toml": "92d60eac8638",
+        "mutants/src/classificacao.py.meta": "561e58285be7",
+        "mutants/src/classificacao.py.spans": "f1d498cb42e7",
+        "mutants/src/classificacao.py:Zone.Identifier": "b952d24cf701",
+        "mutants/tests/test_classificacao.py:Zone.Identifier": "b952d24cf701",
+        "pyproject.toml:Zone.Identifier": "b952d24cf701",
+        "src/classificacao.py:Zone.Identifier": "b952d24cf701",
+        "tests/test_classificacao.py:Zone.Identifier": "b952d24cf701",
+        "variante_d/test_classificacao_match.py:Zone.Identifier": "b952d24cf701"
+    },
+    "git_commit": "9f50bac75c7adc0e84054cb0057548ccea0d291f"
+}
