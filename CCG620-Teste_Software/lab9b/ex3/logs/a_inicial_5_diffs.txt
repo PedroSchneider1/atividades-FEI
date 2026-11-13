@@ -1,0 +1,88 @@
+=================== cotacoes.x_menor_preco__mutmut_1  [killed]
+@@ -1,5 +1,5 @@
+-    if not precos:
++    if precos:
+=================== cotacoes.x_menor_preco__mutmut_2  [survived]
+@@ -1,6 +1,6 @@
+-        raise ValueError("sem cotacoes")
++        raise ValueError(None)
+=================== cotacoes.x_menor_preco__mutmut_3  [survived]
+@@ -1,6 +1,6 @@
+-        raise ValueError("sem cotacoes")
++        raise ValueError("XXsem cotacoesXX")
+=================== cotacoes.x_menor_preco__mutmut_4  [survived]
+@@ -1,6 +1,6 @@
+-        raise ValueError("sem cotacoes")
++        raise ValueError("SEM COTACOES")
+=================== cotacoes.x_menor_preco__mutmut_5  [killed]
+@@ -1,7 +1,7 @@
+-    m = precos[0]
++    m = None
+=================== cotacoes.x_menor_preco__mutmut_6  [killed]
+@@ -1,7 +1,7 @@
+-    m = precos[0]
++    m = precos[1]
+=================== cotacoes.x_menor_preco__mutmut_7  [survived]
+@@ -2,7 +2,7 @@
+-    for p in precos[1:]:
++    for p in precos[2:]:
+=================== cotacoes.x_menor_preco__mutmut_8  [survived]
+@@ -3,6 +3,6 @@
+-        if p < m:
++        if p <= m:
+=================== cotacoes.x_menor_preco__mutmut_9  [killed]
+@@ -4,5 +4,5 @@
+-            m = p
++            m = None
+=================== cotacoes.x_dia_da_compra__mutmut_1  [killed]
+@@ -1,5 +1,5 @@
+-    if not precos:
++    if precos:
+=================== cotacoes.x_dia_da_compra__mutmut_2  [survived]
+@@ -1,6 +1,6 @@
+-        raise ValueError("sem cotacoes")
++        raise ValueError(None)
+=================== cotacoes.x_dia_da_compra__mutmut_3  [survived]
+@@ -1,6 +1,6 @@
+-        raise ValueError("sem cotacoes")
++        raise ValueError("XXsem cotacoesXX")
+=================== cotacoes.x_dia_da_compra__mutmut_4  [survived]
+@@ -1,6 +1,6 @@
+-        raise ValueError("sem cotacoes")
++        raise ValueError("SEM COTACOES")
+=================== cotacoes.x_dia_da_compra__mutmut_5  [killed]
+@@ -1,7 +1,7 @@
+-    pos = 0
++    pos = None
+=================== cotacoes.x_dia_da_compra__mutmut_6  [killed]
+@@ -1,7 +1,7 @@
+-    pos = 0
++    pos = 1
+=================== cotacoes.x_dia_da_compra__mutmut_7  [killed]
+@@ -2,7 +2,7 @@
+-    for i in range(1, len(precos)):
++    for i in range(None, len(precos)):
+=================== cotacoes.x_dia_da_compra__mutmut_8  [killed]
+@@ -2,7 +2,7 @@
+-    for i in range(1, len(precos)):
++    for i in range(1, None):
+=================== cotacoes.x_dia_da_compra__mutmut_9  [survived]
+@@ -2,7 +2,7 @@
+-    for i in range(1, len(precos)):
++    for i in range(len(precos)):
+=================== cotacoes.x_dia_da_compra__mutmut_10  [killed]
+@@ -2,7 +2,7 @@
+-    for i in range(1, len(precos)):
++    for i in range(1, ):
+=================== cotacoes.x_dia_da_compra__mutmut_11  [survived]
+@@ -2,7 +2,7 @@
+-    for i in range(1, len(precos)):
++    for i in range(2, len(precos)):
+=================== cotacoes.x_dia_da_compra__mutmut_12  [survived]
+@@ -3,6 +3,6 @@
+-        if precos[i] <= precos[pos]:
++        if precos[i] < precos[pos]:
+=================== cotacoes.x_dia_da_compra__mutmut_13  [killed]
+@@ -4,5 +4,5 @@
+-            pos = i
++            pos = None

@@ -1,0 +1,11 @@
+
+##### Suite a_bva: mata 19 de 26 mutantes de 1a ordem
+Pares (2 mutantes ja mortos, em linhas diferentes): 143
+Mutantes de 2a ordem MORTOS    : 143
+Mutantes de 2a ordem SOBREVIVEM: 0
+
+##### Suite c_final: mata 25 de 26 mutantes de 1a ordem
+Pares (2 mutantes ja mortos, em linhas diferentes): 260
+Mutantes de 2a ordem MORTOS    : 260
+Mutantes de 2a ordem SOBREVIVEM: 0
+

@@ -1,0 +1,104 @@
+=================== multa.x_valor_com_multa__mutmut_1  [killed]
+@@ -1,5 +1,5 @@
+-    if dias < 0 or dias > 60:
++    if dias < 0 and dias > 60:
+=================== multa.x_valor_com_multa__mutmut_2  [killed]
+@@ -1,5 +1,5 @@
+-    if dias < 0 or dias > 60:
++    if dias <= 0 or dias > 60:
+=================== multa.x_valor_com_multa__mutmut_3  [killed]
+@@ -1,5 +1,5 @@
+-    if dias < 0 or dias > 60:
++    if dias < 1 or dias > 60:
+=================== multa.x_valor_com_multa__mutmut_4  [killed]
+@@ -1,5 +1,5 @@
+-    if dias < 0 or dias > 60:
++    if dias < 0 or dias >= 60:
+=================== multa.x_valor_com_multa__mutmut_5  [killed]
+@@ -1,5 +1,5 @@
+-    if dias < 0 or dias > 60:
++    if dias < 0 or dias > 61:
+=================== multa.x_valor_com_multa__mutmut_6  [killed]
+@@ -1,6 +1,6 @@
+-        raise ValueError("atraso invalido")
++        raise ValueError(None)
+=================== multa.x_valor_com_multa__mutmut_7  [killed]
+@@ -1,6 +1,6 @@
+-        raise ValueError("atraso invalido")
++        raise ValueError("XXatraso invalidoXX")
+=================== multa.x_valor_com_multa__mutmut_8  [killed]
+@@ -1,6 +1,6 @@
+-        raise ValueError("atraso invalido")
++        raise ValueError("ATRASO INVALIDO")
+=================== multa.x_valor_com_multa__mutmut_9  [survived]
+@@ -1,7 +1,7 @@
+-    if dias <= 5:
++    if dias < 5:
+=================== multa.x_valor_com_multa__mutmut_10  [killed]
+@@ -1,7 +1,7 @@
+-    if dias <= 5:
++    if dias <= 6:
+=================== multa.x_valor_com_multa__mutmut_11  [killed]
+@@ -2,7 +2,7 @@
+-        multa = 0
++        multa = None
+=================== multa.x_valor_com_multa__mutmut_12  [killed]
+@@ -2,7 +2,7 @@
+-        multa = 0
++        multa = 1
+=================== multa.x_valor_com_multa__mutmut_13  [killed]
+@@ -4,6 +4,6 @@
+-        multa = 0.01 * (dias - 5)
++        multa = None
+=================== multa.x_valor_com_multa__mutmut_14  [killed]
+@@ -4,6 +4,6 @@
+-        multa = 0.01 * (dias - 5)
++        multa = 0.01 / (dias - 5)
+=================== multa.x_valor_com_multa__mutmut_15  [killed]
+@@ -4,6 +4,6 @@
+-        multa = 0.01 * (dias - 5)
++        multa = 1.01 * (dias - 5)
+=================== multa.x_valor_com_multa__mutmut_16  [killed]
+@@ -4,6 +4,6 @@
+-        multa = 0.01 * (dias - 5)
++        multa = 0.01 * (dias + 5)
+=================== multa.x_valor_com_multa__mutmut_17  [killed]
+@@ -4,6 +4,6 @@
+-        multa = 0.01 * (dias - 5)
++        multa = 0.01 * (dias - 6)
+=================== multa.x_valor_com_multa__mutmut_18  [killed]
+@@ -5,5 +5,5 @@
+-    total = valor * (1 + multa)
++    total = None
+=================== multa.x_valor_com_multa__mutmut_19  [killed]
+@@ -5,5 +5,5 @@
+-    total = valor * (1 + multa)
++    total = valor / (1 + multa)
+=================== multa.x_valor_com_multa__mutmut_20  [killed]
+@@ -5,5 +5,5 @@
+-    total = valor * (1 + multa)
++    total = valor * (1 - multa)
+=================== multa.x_valor_com_multa__mutmut_21  [killed]
+@@ -5,5 +5,5 @@
+-    total = valor * (1 + multa)
++    total = valor * (2 + multa)
+=================== multa.x_valor_com_multa__mutmut_22  [killed]
+@@ -6,4 +6,4 @@
+-    return round(total, 2)
++    return round(None, 2)
+=================== multa.x_valor_com_multa__mutmut_23  [killed]
+@@ -6,4 +6,4 @@
+-    return round(total, 2)
++    return round(total, None)
+=================== multa.x_valor_com_multa__mutmut_24  [killed]
+@@ -6,4 +6,4 @@
+-    return round(total, 2)
++    return round(2)
+=================== multa.x_valor_com_multa__mutmut_25  [killed]
+@@ -6,4 +6,4 @@
+-    return round(total, 2)
++    return round(total, )
+=================== multa.x_valor_com_multa__mutmut_26  [killed]
+@@ -6,4 +6,4 @@
+-    return round(total, 2)
++    return round(total, 3)

@@ -1,0 +1,15 @@
+EQUIVALENTE?  menor_preco  mutmut_8  (p < m -> p <= m)
+    -> 5460 listas testadas, nenhuma diferenca.
+
+NAO EQUIVALENTE  menor_preco  mutmut_7  (precos[1:] -> precos[2:])
+    -> contra-exemplo: [1, 0]  original=0  mutante=1
+
+EQUIVALENTE?  dia_da_compra mutmut_9  (range(1,n) -> range(n))
+    -> 5460 listas testadas, nenhuma diferenca.
+
+NAO EQUIVALENTE  dia_da_compra mutmut_11 (range(1,n) -> range(2,n))
+    -> contra-exemplo: [0, 0]  original=1  mutante=0
+
+NAO EQUIVALENTE  dia_da_compra mutmut_12 (<= -> <)
+    -> contra-exemplo: [0, 0]  original=1  mutante=0
+

@@ -1,0 +1,1 @@
+RESUMO: gerados=22 mortos=11 vivos=11

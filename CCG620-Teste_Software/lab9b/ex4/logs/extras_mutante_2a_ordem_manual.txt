@@ -1,0 +1,15 @@
+=== suite a_bva contra o mutante de 2a ordem ===
+FAILED tests/test_multa.py::test_seis_dias_um_por_cento - assert 100 == 101.0
+FAILED tests/test_multa.py::test_trinta_dias_nominal - assert 124.0 == 125.0
+FAILED tests/test_multa.py::test_cinquenta_e_nove_dias - assert 153.0 == 154.0
+FAILED tests/test_multa.py::test_sessenta_dias_maximo_valido - assert 154.0 =...
+4 failed, 6 passed in 0.02s
+
+=== suite c_final contra o mutante de 2a ordem ===
+FAILED tests/test_multa.py::test_seis_dias_um_por_cento - assert 100 == 101.0
+FAILED tests/test_multa.py::test_trinta_dias_nominal - assert 124.0 == 125.0
+FAILED tests/test_multa.py::test_cinquenta_e_nove_dias - assert 153.0 == 154.0
+FAILED tests/test_multa.py::test_sessenta_dias_maximo_valido - assert 154.0 =...
+FAILED tests/test_multa.py::test_arredondamento_em_duas_casas - assert 124.68...
+5 failed, 8 passed in 0.03s
+

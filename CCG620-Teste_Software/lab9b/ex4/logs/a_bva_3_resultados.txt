@@ -1,0 +1,27 @@
+### mutmut results --all true
+    multa.x_valor_com_multa__mutmut_1: killed
+    multa.x_valor_com_multa__mutmut_2: killed
+    multa.x_valor_com_multa__mutmut_3: killed
+    multa.x_valor_com_multa__mutmut_4: killed
+    multa.x_valor_com_multa__mutmut_5: killed
+    multa.x_valor_com_multa__mutmut_6: survived
+    multa.x_valor_com_multa__mutmut_7: survived
+    multa.x_valor_com_multa__mutmut_8: survived
+    multa.x_valor_com_multa__mutmut_9: survived
+    multa.x_valor_com_multa__mutmut_10: killed
+    multa.x_valor_com_multa__mutmut_11: killed
+    multa.x_valor_com_multa__mutmut_12: killed
+    multa.x_valor_com_multa__mutmut_13: killed
+    multa.x_valor_com_multa__mutmut_14: killed
+    multa.x_valor_com_multa__mutmut_15: killed
+    multa.x_valor_com_multa__mutmut_16: killed
+    multa.x_valor_com_multa__mutmut_17: killed
+    multa.x_valor_com_multa__mutmut_18: killed
+    multa.x_valor_com_multa__mutmut_19: killed
+    multa.x_valor_com_multa__mutmut_20: killed
+    multa.x_valor_com_multa__mutmut_21: killed
+    multa.x_valor_com_multa__mutmut_22: killed
+    multa.x_valor_com_multa__mutmut_23: survived
+    multa.x_valor_com_multa__mutmut_24: killed
+    multa.x_valor_com_multa__mutmut_25: survived
+    multa.x_valor_com_multa__mutmut_26: survived

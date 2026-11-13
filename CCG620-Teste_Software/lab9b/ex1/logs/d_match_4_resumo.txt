@@ -1,0 +1,1 @@
+RESUMO: gerados=36 mortos=34 vivos=2

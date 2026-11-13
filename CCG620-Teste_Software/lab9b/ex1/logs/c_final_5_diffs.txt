@@ -1,0 +1,144 @@
+=================== frete.x_modalidade_frete__mutmut_1  [killed]
+@@ -1,5 +1,5 @@
+-    if peso <= 0 or peso > 30:
++    if peso <= 0 and peso > 30:
+=================== frete.x_modalidade_frete__mutmut_2  [killed]
+@@ -1,5 +1,5 @@
+-    if peso <= 0 or peso > 30:
++    if peso < 0 or peso > 30:
+=================== frete.x_modalidade_frete__mutmut_3  [killed]
+@@ -1,5 +1,5 @@
+-    if peso <= 0 or peso > 30:
++    if peso <= 1 or peso > 30:
+=================== frete.x_modalidade_frete__mutmut_4  [killed]
+@@ -1,5 +1,5 @@
+-    if peso <= 0 or peso > 30:
++    if peso <= 0 or peso >= 30:
+=================== frete.x_modalidade_frete__mutmut_5  [killed]
+@@ -1,5 +1,5 @@
+-    if peso <= 0 or peso > 30:
++    if peso <= 0 or peso > 31:
+=================== frete.x_modalidade_frete__mutmut_6  [killed]
+@@ -1,6 +1,6 @@
+-        raise ValueError("Peso invalido")
++        raise ValueError(None)
+=================== frete.x_modalidade_frete__mutmut_7  [killed]
+@@ -1,6 +1,6 @@
+-        raise ValueError("Peso invalido")
++        raise ValueError("XXPeso invalidoXX")
+=================== frete.x_modalidade_frete__mutmut_8  [killed]
+@@ -1,6 +1,6 @@
+-        raise ValueError("Peso invalido")
++        raise ValueError("peso invalido")
+=================== frete.x_modalidade_frete__mutmut_9  [killed]
+@@ -1,6 +1,6 @@
+-        raise ValueError("Peso invalido")
++        raise ValueError("PESO INVALIDO")
+=================== frete.x_modalidade_frete__mutmut_10  [killed]
+@@ -1,7 +1,7 @@
+-    if distancia < 0 or distancia > 5000:
++    if distancia < 0 and distancia > 5000:
+=================== frete.x_modalidade_frete__mutmut_11  [killed]
+@@ -1,7 +1,7 @@
+-    if distancia < 0 or distancia > 5000:
++    if distancia <= 0 or distancia > 5000:
+=================== frete.x_modalidade_frete__mutmut_12  [killed]
+@@ -1,7 +1,7 @@
+-    if distancia < 0 or distancia > 5000:
++    if distancia < 1 or distancia > 5000:
+=================== frete.x_modalidade_frete__mutmut_13  [killed]
+@@ -1,7 +1,7 @@
+-    if distancia < 0 or distancia > 5000:
++    if distancia < 0 or distancia >= 5000:
+=================== frete.x_modalidade_frete__mutmut_14  [killed]
+@@ -1,7 +1,7 @@
+-    if distancia < 0 or distancia > 5000:
++    if distancia < 0 or distancia > 5001:
+=================== frete.x_modalidade_frete__mutmut_15  [killed]
+@@ -2,7 +2,7 @@
+-        raise ValueError("Distancia invalida")
++        raise ValueError(None)
+=================== frete.x_modalidade_frete__mutmut_16  [killed]
+@@ -2,7 +2,7 @@
+-        raise ValueError("Distancia invalida")
++        raise ValueError("XXDistancia invalidaXX")
+=================== frete.x_modalidade_frete__mutmut_17  [killed]
+@@ -2,7 +2,7 @@
+-        raise ValueError("Distancia invalida")
++        raise ValueError("distancia invalida")
+=================== frete.x_modalidade_frete__mutmut_18  [killed]
+@@ -2,7 +2,7 @@
+-        raise ValueError("Distancia invalida")
++        raise ValueError("DISTANCIA INVALIDA")
+=================== frete.x_modalidade_frete__mutmut_19  [killed]
+@@ -3,7 +3,7 @@
+-    if peso > 20:
++    if peso >= 20:
+=================== frete.x_modalidade_frete__mutmut_20  [killed]
+@@ -3,7 +3,7 @@
+-    if peso > 20:
++    if peso > 21:
+=================== frete.x_modalidade_frete__mutmut_21  [killed]
+@@ -4,7 +4,7 @@
+-        return "Transportadora"
++        return "XXTransportadoraXX"
+=================== frete.x_modalidade_frete__mutmut_22  [killed]
+@@ -4,7 +4,7 @@
+-        return "Transportadora"
++        return "transportadora"
+=================== frete.x_modalidade_frete__mutmut_23  [killed]
+@@ -4,7 +4,7 @@
+-        return "Transportadora"
++        return "TRANSPORTADORA"
+=================== frete.x_modalidade_frete__mutmut_24  [killed]
+@@ -5,7 +5,7 @@
+-    if distancia <= 10:
++    if distancia < 10:
+=================== frete.x_modalidade_frete__mutmut_25  [killed]
+@@ -5,7 +5,7 @@
+-    if distancia <= 10:
++    if distancia <= 11:
+=================== frete.x_modalidade_frete__mutmut_26  [killed]
+@@ -6,7 +6,7 @@
+-        return "Motoboy"
++        return "XXMotoboyXX"
+=================== frete.x_modalidade_frete__mutmut_27  [killed]
+@@ -6,7 +6,7 @@
+-        return "Motoboy"
++        return "motoboy"
+=================== frete.x_modalidade_frete__mutmut_28  [killed]
+@@ -6,7 +6,7 @@
+-        return "Motoboy"
++        return "MOTOBOY"
+=================== frete.x_modalidade_frete__mutmut_29  [killed]
+@@ -7,7 +7,7 @@
+-    elif distancia <= 500:
++    elif distancia < 500:
+=================== frete.x_modalidade_frete__mutmut_30  [killed]
+@@ -7,7 +7,7 @@
+-    elif distancia <= 500:
++    elif distancia <= 501:
+=================== frete.x_modalidade_frete__mutmut_31  [killed]
+@@ -8,6 +8,6 @@
+-        return "Correio expresso"
++        return "XXCorreio expressoXX"
+=================== frete.x_modalidade_frete__mutmut_32  [killed]
+@@ -8,6 +8,6 @@
+-        return "Correio expresso"
++        return "correio expresso"
+=================== frete.x_modalidade_frete__mutmut_33  [killed]
+@@ -8,6 +8,6 @@
+-        return "Correio expresso"
++        return "CORREIO EXPRESSO"
+=================== frete.x_modalidade_frete__mutmut_34  [killed]
+@@ -10,4 +10,4 @@
+-        return "Correio economico"
++        return "XXCorreio economicoXX"
+=================== frete.x_modalidade_frete__mutmut_35  [killed]
+@@ -10,4 +10,4 @@
+-        return "Correio economico"
++        return "correio economico"
+=================== frete.x_modalidade_frete__mutmut_36  [killed]
+@@ -10,4 +10,4 @@
+-        return "Correio economico"
++        return "CORREIO ECONOMICO"

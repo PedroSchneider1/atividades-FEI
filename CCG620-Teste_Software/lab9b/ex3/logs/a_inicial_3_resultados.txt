@@ -1,0 +1,23 @@
+### mutmut results --all true
+    cotacoes.x_menor_preco__mutmut_1: killed
+    cotacoes.x_menor_preco__mutmut_2: survived
+    cotacoes.x_menor_preco__mutmut_3: survived
+    cotacoes.x_menor_preco__mutmut_4: survived
+    cotacoes.x_menor_preco__mutmut_5: killed
+    cotacoes.x_menor_preco__mutmut_6: killed
+    cotacoes.x_menor_preco__mutmut_7: survived
+    cotacoes.x_menor_preco__mutmut_8: survived
+    cotacoes.x_menor_preco__mutmut_9: killed
+    cotacoes.x_dia_da_compra__mutmut_1: killed
+    cotacoes.x_dia_da_compra__mutmut_2: survived
+    cotacoes.x_dia_da_compra__mutmut_3: survived
+    cotacoes.x_dia_da_compra__mutmut_4: survived
+    cotacoes.x_dia_da_compra__mutmut_5: killed
+    cotacoes.x_dia_da_compra__mutmut_6: killed
+    cotacoes.x_dia_da_compra__mutmut_7: killed
+    cotacoes.x_dia_da_compra__mutmut_8: killed
+    cotacoes.x_dia_da_compra__mutmut_9: survived
+    cotacoes.x_dia_da_compra__mutmut_10: killed
+    cotacoes.x_dia_da_compra__mutmut_11: survived
+    cotacoes.x_dia_da_compra__mutmut_12: survived
+    cotacoes.x_dia_da_compra__mutmut_13: killed

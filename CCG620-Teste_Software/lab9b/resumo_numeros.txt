@@ -1,0 +1,12 @@
+# gerados / mortos / vivos de cada etapa (extraido de exN/logs/*_4_resumo.txt)
+ex1  a_inicial          RESUMO: gerados=36 mortos=6 vivos=30
+ex1  c_final            RESUMO: gerados=36 mortos=36 vivos=0
+ex1  d_match            RESUMO: gerados=36 mortos=34 vivos=2
+ex1  e_match_ancorado   RESUMO: gerados=36 mortos=36 vivos=0
+ex2  a_inicial          RESUMO: gerados=13 mortos=3 vivos=10
+ex2  b_exato            RESUMO: gerados=13 mortos=10 vivos=3
+ex2  d_final            RESUMO: gerados=13 mortos=13 vivos=0
+ex3  a_inicial          RESUMO: gerados=22 mortos=11 vivos=11
+ex3  c_final            RESUMO: gerados=22 mortos=20 vivos=2
+ex4  a_bva              RESUMO: gerados=26 mortos=19 vivos=7
+ex4  c_final            RESUMO: gerados=26 mortos=25 vivos=1

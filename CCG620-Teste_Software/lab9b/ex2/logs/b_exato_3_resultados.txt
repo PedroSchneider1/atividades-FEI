@@ -1,0 +1,14 @@
+### mutmut results --all true
+    cashback.x_cashback__mutmut_1: killed
+    cashback.x_cashback__mutmut_2: killed
+    cashback.x_cashback__mutmut_3: killed
+    cashback.x_cashback__mutmut_4: killed
+    cashback.x_cashback__mutmut_5: killed
+    cashback.x_cashback__mutmut_6: killed
+    cashback.x_cashback__mutmut_7: killed
+    cashback.x_cashback__mutmut_8: killed
+    cashback.x_cashback__mutmut_9: killed
+    cashback.x_cashback__mutmut_10: survived
+    cashback.x_cashback__mutmut_11: killed
+    cashback.x_cashback__mutmut_12: survived
+    cashback.x_cashback__mutmut_13: survived

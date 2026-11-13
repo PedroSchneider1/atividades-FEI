@@ -1,0 +1,11 @@
+### pytest + cobertura de ramos (ex4 / c_final)
+.............                                                            [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.3-final-0 ________________
+
+Name           Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------
+src/multa.py       8      0      4      0   100%
+----------------------------------------------------------
+TOTAL              8      0      4      0   100%
+13 passed in 0.06s
